@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Extract HTML Text</title>
+</head>
+<body>
+    <h1>Enter HTML Content</h1>
+    <form action="/extract" method="post">
+        <textarea name="htmlContent" rows="10" cols="50"></textarea><br>
+         <pre th:text="${text}"></pre>
+        <button type="submit">Extract Text</button>
+    </form>
+</body>
+</html>
